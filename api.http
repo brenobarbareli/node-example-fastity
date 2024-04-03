@@ -6,3 +6,12 @@ Content-Type: application/json
   "details":"Um evento de teste",
   "maximumAttendees":10
 }
+
+###
+POST http://localhost:3333/events/d20c7a25-0634-44b6-abe2-46cc07b2f1ec/attendees
+Content-Type: application/json
+
+{
+  "name":"Breno teste",
+  "email":"teste@teste.com"
+}
