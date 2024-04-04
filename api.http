@@ -2,16 +2,16 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
-  "details":"Um evento de teste",
-  "maximumAttendees":10
+  "title": "Novo evento teste333",
+  "details":"aaaaaaaaaaaaa",
+  "maximumAttendees":1
 }
 
 ###
-POST http://localhost:3333/events/d20c7a25-0634-44b6-abe2-46cc07b2f1ec/attendees
+POST http://localhost:3333/events/9f1994d2-464b-4a9e-9afb-c3e986ba1a46/attendees
 Content-Type: application/json
 
 {
   "name":"Breno teste",
-  "email":"teste@teste.com"
+  "email":"teste@teste111.com"
 }

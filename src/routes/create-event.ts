@@ -32,7 +32,7 @@ export async function createEvent(app: FastifyInstance) {
         },
       })
 
-      if (!eventWithSameSlug) {
+      if (eventWithSameSlug) {
         throw new Error('another event with same title already exists')
       }
 
