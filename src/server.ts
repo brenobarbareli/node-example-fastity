@@ -6,6 +6,7 @@ import {
   serializerCompiler,
   validatorCompiler,
 } from 'fastify-type-provider-zod'
+import { errorHandler } from './erro-handler'
 import { checkIn } from './routes/check-in'
 import { createEvent } from './routes/create-event'
 import { getAttendeeBadge } from './routes/get-attendee-badge'
@@ -39,6 +40,7 @@ app.register(getEvent)
 app.register(getAttendeeBadge)
 app.register(checkIn)
 app.register(getEventAttendees)
+app.setErrorHandler(errorHandler)
 
 app.listen({ port: 3333 }).then(() => {
   console.log('server is running')
